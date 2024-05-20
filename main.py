@@ -1,5 +1,6 @@
 import sys
 import json
+import yaml
 
 source_file_name = sys.argv[1]
 dest_file_name = sys.argv[2]
