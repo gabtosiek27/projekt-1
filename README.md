@@ -1,4 +1,4 @@
-# projekt-1
+# Projekt
 Testowe repozytorium
 
 # Setup
