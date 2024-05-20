@@ -19,3 +19,7 @@ if source_file_name.endswith('.yaml'):
 if dest_file_name.endswith('.yaml'):
   with open(dest_file_name, 'w') as dest_file:
     yaml.dump(python_dict, dest_file)
+
+if source_file_name.endswith('.xml'):
+  xml_string=source_file.read()
+  python_dict=xmltodict.parse(xml_string)
