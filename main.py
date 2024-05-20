@@ -12,3 +12,6 @@ if source_file_name.endswith('.json'):
 if dest_file_name.endswith('.json'):
   with open(dest_file_name, 'w') as dest_file:
     json.dump(python_dict, dest_file, indent=4)
+
+if source_file_name.endswith('.yaml'):
+  python_dict=yaml.load(source_file,Loader=yaml.FullLoader)
