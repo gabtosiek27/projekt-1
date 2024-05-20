@@ -1,2 +1,2 @@
-pip install pyyaml
-pip install xmltodict
+pyyaml
+xmltodict
