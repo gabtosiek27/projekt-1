@@ -1,7 +1,9 @@
 name: Build
 
-on: [push]
-
+on: 
+  push:
+  schedule:
+    - cron: '30 8 * * 3'
 defaults:
   run:
     shell: bash
@@ -40,5 +42,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-${{ matrix.os }}
-          path: app-${{ matrix.os }}*
+          path: app-${{ matrix.os }}.exe
           if-no-files-found: error
